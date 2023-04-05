@@ -1,0 +1,49 @@
+var addressSubrecord = customerRecord.getSubrecord({
+
+    fieldId:
+
+        'addressbook'
+
+});
+
+addressSubrecord.setValue({
+
+    fieldId: 'addr1',
+
+    value: '123 Main St'
+
+});
+
+addressSubrecord.setValue({
+
+    fieldId: 'city',
+
+    value: 'Anytown'
+
+});
+
+ 
+
+addressSubrecord.setValue({
+
+    fieldId: 'state',
+
+    value: 'CA'
+
+});
+
+ 
+
+addressSubrecord.setValue({
+
+    fieldId:
+
+        'zip',
+
+    value:
+
+        '12345'
+
+});
+
+customerRecord.save();
